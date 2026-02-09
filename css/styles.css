@@ -8,7 +8,7 @@ body{
     border: 1px solid #363636;  
 }
 
-/* /////// Title- Span Animation /////// */
+/* ///////  /////// */
 /* the box around the slider */
 .toggleswitch {
   font-size: 17px;
@@ -63,10 +63,10 @@ body{
   bottom: 0;
 }
 
-/* /////// Title- Span Animation /////// */
+/* ///////  /////// */
 .hero-image {
-  background-image: url("../res/home_img.png");
-  background-size: cover;        /* fills screen, no stretching */
+  background-image: url("../res/home-img.png");
+  /* background-size: cover;        fills screen, no stretching */
   background-position: center;   /* keeps focus centered */
   background-repeat: no-repeat;
   position: relative;
@@ -87,7 +87,7 @@ body{
 
 
 
-/* /////// Title- Span Animation /////// */
+/* ///////  /////// */
 .slider {
   width: 100%;
   height: var(--height);
@@ -121,6 +121,13 @@ body{
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+
+
+/* ///////  /////// */
+.quote{
+    background-color: white;
+
+}
 
 
 
