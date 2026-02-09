@@ -20,15 +20,58 @@
 
 </head>
 <body>
-  <section class="hero is-fullheight is-mobile"> 
-    <h1> Lanuage hub </h1>
+    <nav class="navbar mx-4 mt-4 px-4 custom-navbar">
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">Home</a>
+                <a class="navbar-item">About</a>
+                <a class="navbar-item">Language</a>
+            </div>
+
+            <div class="navbar-end mt-2">
+                <label class="toggleswitch">
+                    <input type="checkbox">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <section class="hero is-fullheight hero-image my-6"> 
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="overlay-text is-uppercase">
+                    <span class="changing-text"></span>
+                </h1>
+            </div>
+        </div>
+    </section> 
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-centered mb-4">Our Language Resources</h2>
+            <div class="slider mx-auto"
+                style="--width: 200px; --height: 200px; --quantity: 7;">
+                <div class="list">
+                    <div class="item" style="--position: 1">
+                        <img src="res/paris.png" alt="Image 1" />
+                    </div>
+                    <div class="item" style="--position: 2">
+                        <img src="res/spain.png" alt="Image 2" />
+                    </div>
+                    <div class="item" style="--position: 3">
+                        <img src="res/italy.png" alt="Image 3" />
+                    </div>
+                    <div class="item" style="--position: 4">
+                        <img src="images/img4.jpg" alt="Image 4" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-      
-  <footer class="hero-foot has-text-centered is-mobile">
+    <footer class="hero-foot has-text-centered is-mobile">
       <p class="py-4">
         © Copyright – Created, Designed and Developed by Precious Ngwe
       </p>
-  </footer>
+    </footer>
 <script src="js/main.js"></script>
 </body>
 </html>
