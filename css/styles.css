@@ -1,15 +1,31 @@
+ 
+ 
+ 
+                /*////////////////////////////////////////////////////////////*/
+                             /*  THEME SETUP  */
+                /*////////////////////////////////////////////////////////////*/ 
 body{
     background-color: #F9F8F8;
 }
 
+/* /////// Dark theme /////// */
+/* [data-theme="dark"] body {
+  background-color: #121212;
+  color: #eee;
+} */
+
+
+
+                /*////////////////////////////////////////////////////////////*/
+                             /*  HOME PAGE DESIGN  */
+                /*////////////////////////////////////////////////////////////*/ 
 
 .custom-navbar{
     background-color: white;
     border: 1px solid #363636;  
 }
 
-/* ///////  /////// */
-/* the box around the slider */
+/* /////// SLIDER DESIGN /////// */
 .toggleswitch {
   font-size: 17px;
   position: relative;
@@ -17,15 +33,12 @@ body{
   width: 3.5em;
   height: 2em;
 }
-
-/* Hide default HTML checkbox */
 .toggleswitch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .toggle-slider {
   position: absolute;
   cursor: pointer;
@@ -63,7 +76,9 @@ body{
   bottom: 0;
 }
 
-/* ///////  /////// */
+
+
+/* /////// BADGE IMAGE AND OVERLAY DESIGN /////// */
 .hero-image {
   background-image: url("../res/home-img.png");
   /* background-size: cover;        fills screen, no stretching */
@@ -87,7 +102,7 @@ body{
 
 
 
-/* ///////  /////// */
+/* /////// IMAGE SLIDESHOW /////// */
 .slider {
   width: 100%;
   height: var(--height);
@@ -123,15 +138,53 @@ body{
 
 
 
-/* ///////  /////// */
+/* /////// QUOTE DESIGN /////// */
 .quote{
     background-color: white;
 
 }
 
 
+/* /////// FOOTER DESIGN /////// */
+.hero-foot{
+  background-color: #0c0c0c;
+  color: #D9D9D9;
 
-/* /////// Title- Span Animation /////// */
+}
+
+
+                /*////////////////////////////////////////////////////////////*/
+                             /*  LANGUAGE PAGE DESIGN  */
+                /*////////////////////////////////////////////////////////////*/ 
+
+
+.hero-imagefra{
+  background-image: url("../res/french.png");
+  /* background-size: cover;        fills screen, no stretching */
+  background-position: center;   /* keeps focus centered */
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+.overlay-textfra {
+  color: black;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+.dropdown-divider{
+  color: #080808;
+}
+
+
+
+                /*////////////////////////////////////////////////////////////*/
+                             /*  ANIMATTION SETUP  */
+                /*////////////////////////////////////////////////////////////*/ 
+
+
+/* /////// Title - Span Animation /////// */
 @keyframes textSwap {
   0%, 25% {
     content: "LANGUAGE RESOURCES";
@@ -147,6 +200,8 @@ body{
   }
 }
 
+
+/* /////// Slidershow Animation /////// */
 @keyframes autoRun {
   from { left: 100%; }
   to { left: calc(var(--width) * -1); }
